@@ -2,10 +2,13 @@
 import React from 'react';
 import { useGLTF } from '@react-three/drei';
 
-function Model() {
+function Modal() {
   const { scene } = useGLTF('/Scene3.glb');
 
   return <primitive object={scene} />;
 }
 
-export default Model;
+useGLTF.preload('/Scene3.glb')
+
+
+export default Modal;
