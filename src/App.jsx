@@ -12,8 +12,12 @@ import { Environment } from '@react-three/drei'
 function App() {
   return (
     <Router>
-      <div className="App h-screen w-screen">
-        <Suspense fallback={<p>Loading ....</p>}>
+      <div className="App h-screen w-screen overflow-hidden">
+        <Suspense fallback={
+          <div className="h-screen w-screen flex justify-center bg-[beige] items-center">
+            <div className="text-2xl text-black">Loading...</div>
+          </div>
+        }>
             <Canvas gl={{
                 toneMapping: THREE.ACESFilmicToneMapping,
                 toneMappingExposure: 0.5  // Lower this value to reduce exposure
