@@ -29,10 +29,10 @@ function App() {
                     castShadow
                     intensity={0.0000001}
                 />
-                <PerspectiveCamera makeDefault position={[-20,12,35]} />
+                <PerspectiveCamera makeDefault position={[30,-9,-2]} />
                 <Modal/>
-                <CameraControls/>
-                <Environment preset="forest" background blur={0.5}/>
+                {/* <CameraControls/> */}
+                <Environment preset="sunset" background blur={0.5}/>
                 {/* <mesh position={[0,3,2]} scale={[1,1,1]}> */}
                     {/* x,y,z */}
                     {/* <sphereGeometry args={[0.5,32,32]}/>
