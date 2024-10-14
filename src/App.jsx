@@ -18,7 +18,7 @@ function App() {
             <div className="text-2xl text-black">Loading...</div>
           </div>
         }>
-            <Canvas gl={{
+            <Canvas castShadow shadows gl={{
                 toneMapping: THREE.ACESFilmicToneMapping,
                 toneMappingExposure: 0.5  // Lower this value to reduce exposure
             }}>
